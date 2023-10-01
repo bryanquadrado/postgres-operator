@@ -2,7 +2,7 @@
 postgresVersion: 15
 
 # Basic Postgres Settings
-instanceName: instance1
+instanceName: pgsql-instance1
 instanceSize: 50Gi
 instanceStorageClassName: "oci-bv"
 instanceMemory: 2Gi
@@ -11,7 +11,7 @@ instanceReplicas: 1  # This is for the primary instance
 
 # Advanced Postgres Settings for multiple replicas
 instances:
-  - name: replica1
+  - name: pgsql-replica1
     replicas: 1  # Number of replicas you want
     dataVolumeClaimSpec:
       accessModes:
